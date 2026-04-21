@@ -1,0 +1,110 @@
+.contact-page {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  background: var(--surface);
+  -webkit-backdrop-filter: var(--glass);
+  backdrop-filter: var(--glass);
+  border: 1px solid var(--surface-border);
+  border-radius: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.contact-card h2 {
+  font-size: 2rem;
+  margin: 0;
+  background: linear-gradient(135deg, var(--text-main) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.contact-list li {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid var(--surface-border);
+  padding: 1rem 1.5rem;
+  border-radius: 1.25rem;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contact-list li:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  background: rgba(16, 185, 129, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-label {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.contact-value {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 2rem;
+  }
+  
+  .contact-card h2 {
+    font-size: 2.25rem;
+  }
+  
+  .contact-list li {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
