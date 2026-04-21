@@ -1,7 +1,7 @@
 import React from 'react'
 import { Home } from '../pages/Home.jsx'
 import { About } from '../pages/About.jsx'
-import { Contact } from '../pages/Contact.jsx'
+import { Projects } from '../pages/Projects.jsx'
 import { Profile } from '../pages/Profile.jsx'
 import { createBrowserRouter } from 'react-router-dom'
 import { Mainlayout } from '../layout/Mainlayout.jsx'
@@ -20,8 +20,8 @@ export const Router = createBrowserRouter([
             path: "profile",
             element: <Profile />
         }, {
-            path: "contact",
-            element: <Contact />
+            path: "projects",
+            element: <Projects />
         }
         ]
     },
