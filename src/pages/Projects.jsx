@@ -1,6 +1,9 @@
 import React from 'react'
 import "./projects_page_css/projects.css";
 import Ecommerce from "../Image/Ecommerce.jpg"
+import Collegeproject from "../Image/Collegeproject.jpg"
+import Portfolio from "../Image/Portfolio.jpg"
+import Todolist from "../Image/Todolist.png"
 export const Projects = () => {
   const projects = [
     {
@@ -8,7 +11,7 @@ export const Projects = () => {
       title: "College Project",
       description: "This is a college project which i made during my college time.",
       tech: ["Html","Javascript", "CSS3"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+      image:Collegeproject,
       link: "https://college-project-gilt-six.vercel.app/"
     },
    
@@ -17,7 +20,7 @@ export const Projects = () => {
       title: "Nova Portfolio",
       description: "An ultra-modern portfolio template designed for creative professionals and studios.",
       tech: ["React"],
-      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
+      image:Portfolio,
       link: "https://portfolio-swart-rho-82.vercel.app/"
     },
     {
@@ -27,6 +30,14 @@ export const Projects = () => {
       tech: ["React","Api","Css"],
       image:Ecommerce,
       link: "https://e-commerce-delta-lilac-79.vercel.app/"
+    },
+    {
+      id: 4,
+      title: "To do list app ",
+      description: "This is a to do list app which i made using react.",
+      tech: ["React","Css"],
+      image:Todolist,
+      link: "https://to-do-list-challangers.vercel.app/"
     }
   ];
 
