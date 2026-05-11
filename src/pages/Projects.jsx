@@ -39,7 +39,7 @@ export const Projects = () => {
       title: "To do list app ",
       description: "This is a to do list app which i made using react.",
       tech: ["React","Css"],
-      image:Todolist,
+      image:todo,
       link: "https://to-do-list-challangers.vercel.app/"
     }
   ];
