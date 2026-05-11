@@ -3,7 +3,10 @@ import "./projects_page_css/projects.css";
 import Ecommerce from "../Image/Ecommerce.jpg"
 import Collegeproject from "../Image/Collegeproject.jpg"
 import Portfolio from "../Image/Portfolio.jpg"
-import Todolist from "../Image/Todolist.png"
+import todo from "../Image/todo list.png";
+
+
+
 export const Projects = () => {
   const projects = [
     {
