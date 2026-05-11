@@ -1,6 +1,6 @@
 import React from 'react'
 import "./projects_page_css/projects.css";
-
+import Ecommerce from "../Image/Ecommerce.jpg"
 export const Projects = () => {
   const projects = [
     {
@@ -19,6 +19,14 @@ export const Projects = () => {
       tech: ["React"],
       image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
       link: "https://portfolio-swart-rho-82.vercel.app/"
+    },
+    {
+      id: 3,
+      title: "E-commerce Website",
+      description: "This is a e-commerce website which i made using fake store api.",
+      tech: ["React","Api","Css"],
+      image:Ecommerce,
+      link: "https://e-commerce-delta-lilac-79.vercel.app/"
     }
   ];
 
