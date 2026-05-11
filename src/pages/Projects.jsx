@@ -3,7 +3,7 @@ import "./projects_page_css/projects.css";
 import Ecommerce from "../Image/Ecommerce.jpg"
 import Collegeproject from "../Image/Collegeproject.jpg"
 import Portfolio from "../Image/Portfolio.jpg"
-import todo from "../Image/todo list.png";
+
 
 
 
@@ -34,14 +34,7 @@ export const Projects = () => {
       image:Ecommerce,
       link: "https://e-commerce-delta-lilac-79.vercel.app/"
     },
-    {
-      id: 4,
-      title: "To do list app ",
-      description: "This is a to do list app which i made using react.",
-      tech: ["React","Css"],
-      image:todo,
-      link: "https://to-do-list-challangers.vercel.app/"
-    }
+    
   ];
 
   return (
